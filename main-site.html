@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+    <title>TATA Nano - The Game Changer</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: url("nano_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #1f2937;
+}
+        header, footer {
+            background: linear-gradient(90deg, #0d47a1, #1976d2);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4, h5 {
+            margin: 20px 0 10px;
+        }
+        main {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        img {
+            display: block;
+            margin: 30px auto;
+            border-radius: 16px;
+            max-width: 90%;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .highlight {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .slider-container {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        input[type=range] {
+            width: 80%;
+        }
+        .slider-result {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .slider-final-message {
+            font-size: 1.2rem;
+            color: green;
+            margin-top: 15px;
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        th, td {
+            padding: 16px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #1976d2;
+            color: white;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .cta a {
+            background-color: #0d47a1;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background-color: #1565c0;
+        }
+        .story-preview {
+            text-align: center;
+            margin-top: 40px;
+        }
+        #storyBox {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fffbea;
+            border-left: 6px solid #f9a825;
+            border-radius: 8px;
+            display: none;
+        }
+        .fadeIn {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TATA Nano: The Safest Car at a Bike's Price</h1>
+    </header>
+
+
+    <main>
+        <section class="highlight fadeIn">
+            <h2>Looking for a car on a bike's budget?</h2>
+            <p>Introducing the all-new Tata Nano — not just a car, but a revolution. Designed to protect your family, built with innovation by the visionary Sir Ratan Tata, this vehicle is the answer to India's dream of safe, affordable personal transport.</p>
+        </section>
+
+
+        <img src="Nano.jpg" alt="TATA Nano car">
+
+
+        <section class="highlight fadeIn">
+            <h3>All this for a price you won't believe</h3>
+            <p>Slide to guess the price of this amazing innovation:</p>
+            <div class="slider-container">
+                <input type="range" min="100000" max="700000" step="10000" id="slider">
+                <div class="slider-result">Your Guess: <span id="sliderValue">100000rs</span></div>
+                <div class="slider-final-message" id="finalMessage">We told you — all this at a price you couldn't imagine!
+                    Yeah , All this at A unbellivable price of 100000rs
+                </div>
+            </div>
+        </section>
+
+
+        <section class="highlight fadeIn">
+            <h2 style="color:red;">
+                Exciting features offered by non other in Our Price
+            </h2>
+            <h5 style="color:#f9a825;">(There's no other Car in our Price segment)</h5>
+            <h3> Fully AC Cabin </h3>
+            <h3>Strong Steel Body </h3>
+            <h3>Comfort of a Car</h3>
+            <h3>642 cc Strong Petrol engine </h3>
+            <h3>Fuel efficiency of 25kmpl</h3>
+            <h3> driver Airbag for Safety</h3>
+            <h3>Compact size for easy commute</h3>
+         </section>
+
+
+        <section class="fadeIn">
+            <h2>What are you Expectation from a 1 lakh rs car , So here you go </h2>
+            <h2>Feature Comparison</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Tata Nano 100000rs</th>
+                    <th>Bullet Bike 120000rs</th>
+                </tr>
+                <tr>
+                    <td>Seating Capacity</td>
+                    <td>4 People</td>
+                    <td>2 People</td>
+                </tr>
+                <tr>
+                    <td>Weather Protection</td>
+                    <td>Fully Enclosed, AC Cabin</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td>Safety</td>
+                    <td>Proper Body, Seat Belts</td>
+                    <td>No Safety Features</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Fully Spacious</td>
+                    <td>Limited</td>
+                </tr>
+                <tr>
+                    <td>Family-Friendly</td>
+                    <td>Absolutely</td>
+                    <td>No</td>
+                </tr>
+            </table>
+
+
+        </section>
+
+
+        <div class="cta">
+            <a href="https://cars.tatamotors.com/" target="_blank">Explore More Cars from TATA</a>
+            <a href="file:///C:/Users/kesha/.vscode/.vscode/Html/Registration.html">Register Now</a>
+        </div>
+
+
+        <div class="story-preview">
+            <h3>Want to know how Nano was born?</h3>
+            <button onclick="showStory()">Click here to read the story</button>
+            <div id="storyBox">
+                <p>One sunny day, Sir Ratan Tata was driving through a crowded street. He noticed a family of four precariously riding a single bike — drenched in sweat, struggling, and exposed to danger. This vision struck a chord deep in his heart. He wondered: could India have an affordable, safe car for everyone? That day marked the beginning of a dream — a dream that became a mission. And now, that mission is realized in the form of Tata Nano.</p>
+            </div>
+        </div>
+    </main>
+<footer>
+    <p>Tata Motors. Designed to impress. Built for India.</p>
+    <p>
+        <a href="file:///C:/Users/kesha/.vscode/.vscode/Html/about.html" target="_blank" style="color: #fff; text-decoration: underline;">
+            About the Creator
+        </a>
+    </p>
+</footer>
+
+
+    <script>
+        const slider = document.getElementById('slider');
+        const sliderValue = document.getElementById('sliderValue');
+        const finalMessage = document.getElementById('finalMessage');
+
+
+        function updateResult(value) {
+            sliderValue.textContent = value;
+            finalMessage.style.display = (value === '100000') ? 'block' : 'none';
+        }
+
+
+        slider.addEventListener('input', function () {
+            updateResult(slider.value);
+        });
+
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.fadeIn').forEach(el => {
+                el.style.animationDelay = Math.random() * 0.5 + 's';
+                el.classList.add('visible');
+            });
+            updateResult(slider.value);
+        });
+
+
+        function showStory() {
+            const story = document.getElementById('storyBox');
+            story.style.display = story.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
